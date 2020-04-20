@@ -1,0 +1,39 @@
+.active
+{
+    color:  #ffc13b;
+}
+.nav-link:hover
+{
+    color:  #ffc13b;
+}
+body,.modal-content
+{
+    background-color: #f5f0e1;
+}
+nav
+{
+    background-color: #1e3d59;
+}
+a
+{
+    color: #f5f0e1;
+    
+}
+label
+{
+    color: #1e3d59;
+}
+.but
+{
+    background-color: #ffc13b;
+    color: #1e3d59;
+}
+h4
+{
+    color: #1e3d59;
+}
+.sub
+{
+    background-color: #1e3d59;
+    color: #f5f0e1;
+}

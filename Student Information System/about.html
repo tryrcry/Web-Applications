@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Student Information System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        function preback(){window.history.forward();}
+        setTimeout("preback()",0);
+        window.onunload=function(){null};
+        </script>
+    </head>
+    <body>
+        <form action="login.php" method="POST">
+        <nav class="navbar navbar-expand-sm">
+            <a href="home.html" class="navbar-brand"><img src="student.png" width="35px"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active"><strong>About</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link"><strong>Contact</strong></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-toggle="modal" data-target="#login"> <i class="fa fa-arrow-circle-right"><strong> Login</strong></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-toggle="modal" data-target="#signup"> <i class="fa fa-user-circle-o"><strong> SignUp</strong></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="modal fade" id="login">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Username</span>
+                                        <input type="text" required name="uname" placeholder="Username" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Password&nbsp;</span>
+                                        <input type="password" required name="pass" placeholder="Password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" name="submit" value="about" class="btn but">Go</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form action="signup.php" method="POST" enctype="multipart/form-data">
+        <div class="modal fade" id="signup">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Signup</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-2"><label for="">Name</label></div>
+                                <div class="col-sm-3"><input required type="text" name="fname" class="form-control" placeholder="First Name"/></div>
+                                <div class="col-sm-3"><input type="text" name="lname" class="form-control" placeholder="Last Name"/></div>
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Father/Gaurdian</label></div>
+                                <div class="col-sm-3 mt-1"><input required name="ffname" type="text" class="form-control" placeholder="First Name"/></div>
+                                <div class="col-sm-3 mt-1"><input name="flname" type="text" class="form-control" placeholder="Last Name"/></div> 
+                            </div> 
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Mother/Gaurdian</label></div>
+                                <div class="col-sm-3 mt-1"><input required name="mfname" type="text" class="form-control" placeholder="First Name"/></div>
+                                <div class="col-sm-3 mt-1"><input name="mlname" type="text" class="form-control" placeholder="Last Name"/></div> 
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Qualification</label></div>
+                                <div class="col-sm-6 mt-1"><input required name="qual" type="text" class="form-control" placeholder="Qualification"/></div> 
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Contact Number</label></div>
+                                <div class="col-sm-3 mt-1"><input required name="cno1" type="text" class="form-control" placeholder="Number 1"/></div>
+                                <div class="col-sm-3 mt-1"><input required name="cno2" type="text" class="form-control" placeholder="Number 2"/></div> 
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Address</label></div>
+                                <div class="col-sm-6 mt-1"><input required name="address" type="text" class="form-control" placeholder="Address"/></div> 
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">DOB</label></div>
+                                <div class="col-sm-3 mt-1"><input required name="dob" type="date" class="form-control" placeholder="Email Id"/></div>
+                                <div class="col-sm-3 mt-1"><label for="fname">Gender&nbsp&nbsp<input name="gen" required type="radio" value="M"/> M &nbsp;<input required name="gen" value="F" type="radio"/> F</label></div>
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Email Id</label></div>
+                                <div class="col-sm-3 mt-1"><input required type="text" class="form-control" name="mail" placeholder="Email Id/"></div>
+                                <div class="col-sm-1 mt-1"><label for="fname">Dept</label></div>
+                                <div class="col-sm-2 mt-1">
+                                    <select class="form-control" required name="dept">
+                                    <option value="">Select</option>
+                                    <option value="CSE">CSE</option>
+                                    <option value="IT">IT</option>
+                                </select></div> 
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-4 mt-1"><label for="fname">Image</label></div>
+                                <div class="col-sm-4 mt-1"><input required type="file" class="form-control" name="image"/></div> 
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Username</label></div>
+                                <div class="col-sm-6 mt-1"><input required name="uname" type="text" class="form-control" placeholder="Username"/></div> 
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-sm-2 mt-1"><label for="fname">Password</label></div>
+                                <div class="col-sm-6 mt-1"><input required name="pass" type="password" class="form-control" placeholder="Password"/></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" name="submit" value="about" class="btn but">Submit</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </body>
+</html>
