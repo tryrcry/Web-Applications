@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Car Rental Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html"><b>About</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cars.html"><b>Cars</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html"><b>Services</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><b>Contact Us</b></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-sm-7 mt-5 align-self-center">
+                    <div class="row">
+                        <div class="col-sm-5">
+                          <h3>Sedan</h3>
+                          <div id="demo2" class="carousel slide" data-ride="carousel">
+                              <ul class="carousel-indicators">
+                                <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo2" data-slide-to="1"></li>
+                                <li data-target="#demo2" data-slide-to="2"></li>
+                              </ul>
+                              
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img class="img-fluid" src="images/hatch1.png">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="img-fluid" src="images/hatch2.png">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="img-fluid" src="images/hatch3.jpg">
+                                </div>
+                              </div>
+                              
+                              <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#demo2" data-slide="next">
+                                <span class="carousel-control-next-icon bg-dark"></span>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <table>
+                                <tr>
+                                  <td><h5>Indica/Vista/Ritx/Swift or Similar</h5></td>
+                                  <td class="p-2"><h3>Rs. 1000</h3></td>
+                                </tr>
+                                <tr>
+                                  <td><p>Rs. 12 per kilo meter</p></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Driver batta - Rs. 300">More</a></td>
+                                  <td><button class="btn btn-warning">Book</button></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-5 mt-5">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header"><h4>Other Details</h4></div>
+                                <div class="card-body">
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td>Source</td>
+                                            <td>Kumbakonam</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Destination</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pickup Date</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Price</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GST</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-7 jumbotron mt-3">
+                    <h2 class="text-center">Your Personal Information</h2>
+                    <form action="">
+                        <table class="table table-borderless">
+                            <tr>
+                                <td><label for="">NAME</label></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">EMAIL</label></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">CONTACT NUMBER</label></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">PICKUP ADDRESS</label></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">PICUP TIME</label></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                        </table>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td><input type="radio" name="advance"> Pay advance Rs. 500&#x20B9; and Rest of the payment to driver and Get 50&#x20B9; Off</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="advance"> Pay full payment to driver.</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> By continuing, you agree to Terms and Conditions.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><input class="btn btn-warning" type="submit" value="CONFIRM BOOKING"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-warning p-5">
+            <div class="row justify-content-around p-5">
+                <div class="col-sm-4 mt-3">
+                  <p><b>Company Name</b> &#169; 2020 | Privacy Policy <br>Website designed by Arun and Kesavan</p>
+                </div>
+                <div class="col-sm-4 mt-3 text-center">
+                    <b>SOCIAL MEDIA</b><br>
+                  <i class='fab fa-facebook-square' style='font-size:36px'></i>
+                  <i class='fab fa-instagram ml-3 mr-3' style='font-size:36px'></i>
+                  <i class='fab fa-twitter-square' style='font-size:36px'></i>
+                </div>
+                <div class="col-sm-4 mt-3">
+                  <h2 class="mobile-view"><a href="tel:0000000000">Call Us : 0000000000</a></h2>
+                  <h2 class="desktop-view">Call Us : 00000000000</h2>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
